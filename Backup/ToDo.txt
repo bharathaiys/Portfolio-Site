@@ -1,0 +1,4 @@
+1. Removing blink 
+2. Moving project names on click
+3. When navigating to projects make elements move out. 
+4. in toplinks dont underline if it is already highlighted. 

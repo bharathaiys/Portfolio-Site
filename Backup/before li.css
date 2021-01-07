@@ -1,0 +1,251 @@
+*{
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 0.63;
+}
+body{
+    margin: 0px;
+    /* background-image: url(resources/Rectangle\ Copy.png); */
+    background-image: linear-gradient(90deg, #063DC7, #07048F);
+    overflow: hidden; /* Hide scrollbars */
+    cursor: none;
+    
+}
+
+#Top{
+    display: grid;
+    padding: 0px;
+    margin: 0px;
+      grid-template-columns: 640px auto;
+      grid-template-rows: 120px auto ;
+      grid-template-areas: 
+      "tl tr"
+      "md md";
+}
+#Tl{
+    display: flex;
+    /* justify-content: center;
+    align-items:center; */
+    grid-area: tl;
+    font-size: 25px;
+    letter-spacing: 0.9px;
+    
+    padding-left: 65px;
+    padding-top: 57px;
+    padding-bottom: 70px;
+  }
+#Tr{
+    
+    display: grid;
+    /* justify-content: center;
+    align-items:center; */
+    grid-template-rows: 51px auto;
+    /* flex-direction: row-reverse; */
+    /* padding-top: 48px; */
+    grid-area: tr;
+    padding-right: 200px;
+  }
+#hm{
+    text-decoration: underline;
+    text-underline-position: under;
+    opacity: 100%;
+}
+#Trt{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-right: 25px;
+    padding-top: 15px;
+}
+#Trb{
+    font-size: 20px;
+    letter-spacing: 0.72px;
+    padding-top: 27px;
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+#Md{
+    display:grid;
+    grid-area: md;
+    /* justify-content: center; */
+    /* align-items:center; */
+    grid-template-columns: 52.7% 47.3%;
+    padding-left: 65px;
+  }
+
+.whitefont{
+    color: white;
+}
+
+.para{
+    letter-spacing: 0.58px;
+    font-size: 14px;
+    opacity: 70%;
+    color: #ffffff;
+    font-weight: 300;
+    text-align: center;
+    padding-left: 77px;
+    padding-right: 100px;
+}
+#h{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+
+#read{
+    /* margin-left: 200px;*/
+    margin-top: 60px; 
+    width: 181px;
+    height: 44px;
+    transition: width 0.4s,height 0.4s;
+    /* animation: jello;
+     animation-duration: 1.3s;
+     */
+    
+    /* filter: drop-shadow(0px 2px 4px #9B9B9B); */
+    
+}
+#headW{
+    opacity : 100%;
+    font-size: 40px;
+}
+
+#dp{
+  
+    height: 607px;
+    width: 382px;
+    animation-name: bounceInRight;
+    animation-duration: 1s;
+}
+.toph{
+    padding: 30px;
+    opacity: 70%;
+    position: relative;
+    
+}
+.toph:after{
+position: absolute;
+height: 3px;
+width: 0;
+background: transparent;
+}
+.toph:hover:after{
+    width: 100%;
+    left: 0;
+    background: #FF2C93;
+
+}
+.cursor {
+    position: absolute;
+    background-color:  #F3ECFF;
+    /* border: 1px solid silver; */
+    border-radius: 100%;
+    opacity: 0.9;
+    width: 10px;
+    height: 10px;
+    transition: 0ms ;
+    transition: background-color 0.8s,width 0.7s,height 0.2s,transform .2s,margin .2s,opacity .2s;
+    pointer-events: none;
+}
+.cursor-follower {
+    background-color:#F3ECFF;
+    opacity: 0.3;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    transition: background-color 1s,width 1s,height .2s,transform .2s,margin .2s,opacity .2s;
+    /* user-select: none; */
+    /* transform: translate(5px,5px); */
+    transition:  300ms ease-out;
+    pointer-events: none;
+}
+#abt :hover{
+    color: #FF6069;
+}
+a{
+    cursor: none;
+}
+#Mdl{
+    padding-top: 50px;
+    animation: bounceInLeft;
+    animation-duration: 1.1s;
+}
+#Mdr{
+    
+    display: grid;
+    grid-template-columns: 382px auto;
+}
+#Mpic{
+    width: 382px;
+}
+#MNav{
+    display: flex;
+    flex-direction: column;
+    padding-top: 113px;
+    padding-right: 38px;
+    padding-left: 90px;
+    letter-spacing: 0.65px;
+    font-weight: 500;
+    color: #F3ECFF;
+    /* position: relative; */
+    /* left: 0px; */
+    animation: bounceInRight;
+    animation-duration: 1.1s;
+}
+#logo{
+    cursor: none;
+    animation: bounceInLeft;
+    animation-duration: 1.1s;
+    /* animation: jello;
+    animation-duration: 1.3s; */
+}
+#sublink{
+
+}
+
+#MNav :hover{
+    animation: wobble;
+    animation-duration: 1s;
+    color: #ff336d;
+    font-size: 21px;
+    
+    
+}
+@keyframes vibrate{
+    0%{
+        color: #F3ECFF;
+    }
+    100%{
+       color: #ff6262;
+    }
+}
+#drib{
+   height: 34px;
+   /* animation: jello;
+    animation-duration: 1.1ms; */
+}
+#email{
+    height: 34px;
+    /* animation: jello;
+    animation-duration: 1.1ms; */
+}
+#res{
+    height: 34px;
+    /* animation: jello;
+    animation-duration: 1.1ms; */
+}
+.toph{
+    animation: bounceInRight;
+    animation-duration: 1.1s; 
+}
+#logo :hover{
+    animation: shakeX;
+    animation-duration: 1.9s;
+}
+#hel :hover{
+    background-color: #ff336d;
+}
